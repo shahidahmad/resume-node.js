@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <% include partials/template/head.ejs %>
+  </head>
+  <body id="<%= pageId %>">
+        <% include partials/template/header.ejs %>
+        <div class="row">
+        <h5 class="col m10 offset-m1" style="padding-top:60px;">Leave me a message here and I will get back to you as soon as possible.</h5>
+        </div>    
+        <div class="row">
+        <div class="card blue col m10 offset-m1">
+        <div class="card-content white-text"> 
+        <div class="row">
+
+            <form action="/contact" method="post">
+         <!-- <input type="text" name="last_name"> -->
+            
+            <!-- <form class="col s12" method="get" action="/contact" enctype="multipart/form-data"> -->
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate" name="first_name">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" name="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col m6 s12">
+                  <input id="phone" type="text" class="validate" name="phone">
+                  <label for="phone">Phone number</label>
+                </div>
+              </div>
+            
+              <div class="row">
+                <div class="input-field col m6 s12">
+                  <input id="email" type="email" class="validate" name="email">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+
+              <div class="row">
+                
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea" name="textarea1"></textarea>
+                      <label for="textarea1">Textarea</label>
+                    </div>
+                  </div>
+                <!-- </form> -->
+              </div> 
+                <button class="btn waves-effect waves-light white black-text" type="submit" >Submit <i class="material-icons right">send</i>
+                </button> 
+                <!-- <button value="submit">submit</button> -->
+
+   
+            </form>
+        </div>
+        </div>
+      </div>
+    </div>        
+      
+        <% include partials/template/fixed_action_button.ejs %>
+        <% include partials/template/footer.ejs %>
+  </body>
+</html>

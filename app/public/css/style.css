@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100, 300);
+html{
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+/*
+    background-color: grey;
+    color: white; 
+    */
+    color:black
+
+}
+.divider{
+  background-color:black !important;
+}
+.input-field label{
+    color: #000;
+}
+
+.input-field input{
+    border-color: #000;
+}
+
+.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=textarea]:focus + label  {
+     color: #000;
+     border-bottom: black;
+   }
+
+.input-field input[type=text]:focus  {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+    border-bottom: black;
+   }
+
+.input-field input[type=email]:focus  {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+    border-bottom: black;
+   }
+
+/*
+ .input-field textarea:focus  {
+     outline: none !important;
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+     border-bottom: black;
+   }
+*/
+
+ /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 red;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+#textarea1 {
+    border-bottom: 0.2px solid black;
+}
+#textarea1:focus {
+  border-bottom: 0.2px solid black;
+  box-shadow: 0 1px 0 0 black;
+}
+
+#textarea1:focus + label {
+  color: black;
+    /*border-bottom: 0.2px solid black;*/
+}

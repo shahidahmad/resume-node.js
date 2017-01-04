@@ -1,0 +1,19 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "My online profile",
+  "main": "app/app.js",
+  "script": {
+    "start": "node app/app.js"
+  },
+  "author": "Shahid Ahmed Khan",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "mysql": "^2.12.0",
+    "nodemailer": "^2.7.0",
+    "reload": "^1.1.0",
+    "sendgrid": "^4.7.1"
+  }
+}
