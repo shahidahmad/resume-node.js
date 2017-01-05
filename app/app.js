@@ -25,26 +25,26 @@ app.post('/contact', urlencodedParser, function(req, res){
 		message: req.body.textarea1
 	};
 
-	var connection = mysql.createConnection({
-		host: 'localhost',
-		user: 'root', 
-		password: 'hello', 
-		database: 'sample'
-	});
+	// var connection = mysql.createConnection({
+	// 	host: 'localhost',
+	// 	user: 'root', 
+	// 	password: 'hello', 
+	// 	database: 'sample'
+	// });
 
-	connection.connect(function(error){
-		if(error){
-			console.log("Error connecting to database");
-		} else {
-			console.log("Successfully connected to database!!");
-		}
-	});
+	// connection.connect(function(error){
+	// 	if(error){
+	// 		console.log("Error connecting to database");
+	// 	} else {
+	// 		console.log("Successfully connected to database!!");
+	// 	}
+	// });
 
-	var query = connection.query('insert into contact set ?', contact_details, function(){
-		console.log(query.sql);
-	});
+	// var query = connection.query('insert into contact set ?', contact_details, function(){
+	// 	console.log(query.sql);
+	// });
 
-	connection.end();
+	// connection.end();
 
 	var transporter = nodemailer.createTransport({
 		service: 'Gmail',
@@ -72,7 +72,7 @@ app.post('/contact', urlencodedParser, function(req, res){
 
 });
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT);
 app.set('view engine', 'ejs');
 app.set('views', 'app/views');
 
