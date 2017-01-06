@@ -13,7 +13,7 @@
         <div class="card-content white-text"> 
         <div class="row">
 
-            <form action="/contact" method="post">
+            <form action="/contact" method="post" name="contact-form">
          <!-- <input type="text" name="last_name"> -->
             
             <!-- <form class="col s12" method="get" action="/contact" enctype="multipart/form-data"> -->
@@ -52,10 +52,14 @@
                   </div>
                 <!-- </form> -->
               </div> 
-                <button class="btn waves-effect waves-light white black-text" type="submit" >Submit <i class="material-icons right">send</i>
+                <button class="btn waves-effect waves-light white black-text" type="submit">Submit <i class="material-icons right">send</i>
                 </button> 
                 <!-- <button value="submit">submit</button> -->
-
+                <script>
+                  function submitForm() {
+                        window.location.href = "google.com";
+                  });
+                </script>
    
             </form>
         </div>
