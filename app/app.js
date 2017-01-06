@@ -45,7 +45,7 @@ app.post('/contact', urlencodedParser, function(req, res){
 			pass: process.env.PASS
 		}
 	});
-	var text = req.body.textarea1;
+	var text = "Hi " + req.body.first_name + ",\n\nYour message: \n\n\""  + req.body.textarea1 + "\"\n\n has been recieved.\nI will get back to you as soon as I can. \n\nregards,\nShahid Khan";
 
 	var mailOptions = {
 		from: 'shahidahmads1@gmail.com',

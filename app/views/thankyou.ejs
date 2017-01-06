@@ -5,18 +5,19 @@
   </head>
   <body id="<%= pageId %>">
       <% include partials/template/header.ejs %>
-<!--    ***************************************************************************************  -->
-<div class="row">
-   <div class="col m10 offset-m1">   
-      <div class="about">
-		<h1>Thank you!</h1>
-		<script>
-				window.setTimeout(function() {
-				  window.location.href = "/";
-				}, 3000);
-		</script>
-      
-<!--    ***************************************************************************************  -->      
+
+		<div class="row center-align" style="height:100%; margin-top:80px;">
+		   <div class="col m10 offset-m1">   
+		      
+				<h1>Thank you!</h1>
+				<script>
+						window.setTimeout(function() {
+						  window.location.href = "/";
+						}, 3000);
+				</script>
+		      
+			</div>
+		</div>
        <% include partials/template/fixed_action_button.ejs %>
       <% include partials/template/footer.ejs %>
   </body>

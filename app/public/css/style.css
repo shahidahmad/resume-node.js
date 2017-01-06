@@ -5,13 +5,13 @@ html{
 }
 
 body {
-/*
-    background-color: grey;
-    color: white; 
-    */
-    color:black
+    height: 100%;
+    color:black;
 
 }
+
+
+
 .divider{
   background-color:black !important;
 }
