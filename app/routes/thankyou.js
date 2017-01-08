@@ -3,8 +3,8 @@ var router = express.Router();
 
 router.get('/thankyou', function(req, res){
    res.render('thankyou', {
-       'pageTitle': 'Thank you',
-       'pageId': 'thank'
+       pageTitle: 'Thank you',
+       pageId: 'thank'
    });
 });
 

@@ -11,8 +11,6 @@ var db = new sqlite3.Database('contact');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 var nodemailer = require('nodemailer');
 
-// var helper = require('sendgrid')('shahidahmads1@gmail.com', )
-
 
 app.post('/contact', urlencodedParser, function(req, res){
 	
@@ -49,7 +47,7 @@ app.post('/contact', urlencodedParser, function(req, res){
 
 	var mailOptions = {
 		from: 'shahidahmads1@gmail.com',
-		to: 'shahidahmads1@gmail.com',
+		to: req.body.email + ', shahidahmads1@gmail.com',
 		subject: 'Text email',
 		text: text
 	};
