@@ -47,7 +47,7 @@ app.post('/contact', urlencodedParser, function(req, res){
 
 	var mailOptions = {
 		from: 'shahidahmads1@gmail.com',
-		to: req.body.email + ', shahidahmads1@gmail.com',
+		to: req.body.email + '; shahidahmads1@gmail.com',
 		subject: 'Text email',
 		text: text
 	};
@@ -56,6 +56,7 @@ app.post('/contact', urlencodedParser, function(req, res){
 		if(error){
 			console.log(error);
 		} else {
+			console.log('Sending mail to ' + req.body.email + '; shahidahmads1@gmail.com');
 			console.log('Message sent: ' + info.response);
 		} 
 	});
