@@ -48,7 +48,7 @@ app.post('/contact', urlencodedParser, function(req, res){
 	var mailOptions = {
 		from: 'shahidahmads1@gmail.com',
 		to: req.body.email + '; shahidahmads1@gmail.com',
-		subject: 'Text email',
+		subject: 'Thank you for contacting me!',
 		text: text
 	};
 
